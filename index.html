@@ -6,23 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин одежды</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1 class="header-title">Lorem ipsum is placeholder text commonly used -20%</h1>
+    <header class="header-container">
+        <div class="header-title">Lorem ipsum is placeholder text commonly used -20%</div>
         <nav class="header-menu">
             <div class="header-menu__left">
                 <img src="" alt="Logo">
                 <span>москва</span>
             </div>
             <div class="header-menu__center">
-                <button><a href="#">Sale</a></button>
-                <a href="#">Женщинам</a>
-                <a href="#">Мужчинам</a>
-                <a href="#">детям</a>
+                <button><a class="header-menu__link" href="#">Sale</a></button>
+                <a class="header-menu__link" href="#">Женщинам</a>
+                <a class="header-menu__link" href="#">Мужчинам</a>
+                <a class="header-menu__link" href="#">детям</a>
             </div>
             <div class="header-menu__right">
                 <img src="" alt="">
@@ -31,7 +35,13 @@
                 <img src="" alt="">
             </div>
         </nav>
-        <div class="header-search"></div>
+        <div class="header-search">
+            <a class="header-menu__link_2" href="">Новинки</a>
+            <a class="header-menu__link_2" href="">Одежда</a>
+            <a class="header-menu__link_2" href="">Обувь</a>
+            <a class="header-menu__link_2" href="">Аксессуары</a>
+            <a class="header-menu__link_2" href="">Любимые бренды</a>
+        </div>
     </header>
 
     <main>
