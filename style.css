@@ -57,8 +57,18 @@ body {
 .header-menu__button {
     height: 40px;
     width: 90px;
+
     border-radius: 20px;
     background: #ED1331;
+}
+
+.header-menu__link-button {
+    position: relative;
+    top: 12px;
+    left: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .header-menu__right {
