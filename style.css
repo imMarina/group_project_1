@@ -80,7 +80,6 @@ body {
 .header-menu__link_2 {
     text-decoration: none;
     color: #565656;
-    ;
 }
 
 .header-search {
@@ -90,4 +89,72 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: 30px;
+}
+
+.footer-container {
+    background-color: #F6F6F6;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-navigation {
+    width: 100vw;
+    padding: 3vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-navigation__link {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-weight: lighter; /*вот тут ничего не помогает, ни числом выставлять размер, ни словом. Видимо, где-то идет конфликт*/
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.footer-navigation__title {
+    color: #1A1A1A;
+    font-weight: 600;
+}
+
+.footer-support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-sale {
+    color: #ED1331; 
+}
+
+.footer-about_the_company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-payment {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.footer-copyright {
+    width: 100vw;
+    height: 5vh;
+    border-top: 1px solid #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
