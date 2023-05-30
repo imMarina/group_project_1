@@ -98,3 +98,44 @@ body {
     align-items: center;
     column-gap: 30px;
 }
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner__background {
+    display: flex;
+    gap: 0;
+}
+
+
+.main-banner__background_2 {
+    position: relative;
+    left: 341px;
+    top: -514px;
+}
+
+
+/* .main-container {    
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "main-banner main-banner main-banner"
+        "main-catalog"
+        "main-product_cards";
+}
+
+.main-banner {
+    grid-area: main-banner;
+}
+
+.main-catalog {
+    grid-area: main-catalog;
+}
+
+.main-product_cards {
+    grid-area: main-product_cards;
+}*/
