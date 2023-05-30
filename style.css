@@ -46,8 +46,6 @@ body {
     column-gap: 20px;
 }
 
-.header-menu__left-item1 {}
-
 .header-menu__center {
     grid-column: 2/3;
     display: flex;
@@ -80,7 +78,6 @@ body {
 .header-menu__link_2 {
     text-decoration: none;
     color: #565656;
-    ;
 }
 
 .header-search {
