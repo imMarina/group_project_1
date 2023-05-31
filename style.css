@@ -1,17 +1,17 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 0.9em;
     color: #565656;
 }
 
 .header-container {
     display: grid;
-    grid-template-rows: 1fr 70px 1fr;
+    grid-template-rows: 1fr 10vh 1fr;
     grid-template-areas:
         "header-title"
         "header-menu"
         "header-search";
-    height: 180px;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 1.5em;
 }
 
 .header-menu__center {
@@ -51,23 +51,31 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 3.5em;
 }
 
 .header-menu__link-button {
-    padding: 12px 25px;
-    border-radius: 20px;
+    padding: 1.8vh 2vw;
+    border-radius: 2em;
     text-decoration: none;
     color: #FFFFFF;
     background-color: #ED1331;
 }
+
+.header-menu__link-woman {
+    padding: 4vh 2vw;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #2B2B2B;
+}
+
 
 .header-menu__right {
     grid-column: 3/4;
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 1.5em;
 }
 
 .header-menu__link {
@@ -87,7 +95,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 2.5em;
 }
 
 .main-container {
@@ -117,10 +125,10 @@ body {
 
 .main-banner__center {
     position: absolute;
-    left: 500px;
-    top: 305px;
-    width: 607px;
-    height: 381px;
+    left: 31.3%;
+    top: 40%;
+    width: 37vw;
+    height: 50vh;
     border-radius: 20px;
     color: #1D1D1D;
     background-color: rgba(255, 255, 255, 0.7);
@@ -135,25 +143,23 @@ body {
 
 .main-banner__title {
     margin: 0;
-    font-weight: 500;
-    font-size: 64px;
+    font-size: 4.5em;
 }
 
 .main-banner__text {
-    font-weight: 500;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .main-banner__button {
-    height: 50px;
-    width: 170px;
+    height: 6vh;
+    width: 10vw;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 2em;
     background-color: #404444;
 }
 
 .main-banner__link-button {
-    line-height: 3.5em;
+    line-height: 3.3em;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
