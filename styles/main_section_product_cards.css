@@ -1,0 +1,46 @@
+.main-product_cards {
+    grid-area: main-product_cards;
+    display: flex;
+    flex-direction: column;
+}
+
+/*какой будем делать маржин, по шаблону у всего сайта одинаковый маржин?*/
+
+.main-product_cards__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-product_cards__header_catalog {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #565656; /*сделать расстояяние между стрелочкой и надписью*/
+}
+
+.main-product_cards__goods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (150px, 1fr)); /*не получается сделать в одну строку. Когда ставлю все во флекс, карточки встают в ряд. Но с флексом не получается сделать что-то по типу авто-филл*/
+}
+
+.main-product_cards__goods_unit {
+    width: minmax(150px, 300px);
+}
+
+.main-product_cards__product_photo {}
+
+.main-product_cards__like {}
+
+.main-product_cards__label_new {}
+
+.main-product_cards__price {}
+
+.main-product_cards__shopbag {}
+
+.main-product_cards__product_brand,
+.main-product_cards__product_name {}
+
+.main-product_cards__size {
+    display: flex;
+    gap: 10px;
+}
