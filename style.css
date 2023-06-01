@@ -95,9 +95,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     column-gap: 30px;
-=======
     column-gap: 2.5em;
 }
 
@@ -207,5 +205,4 @@ body {
 
 .main-product_cards {
     grid-area: main-product_cards;
->>>>>>> bc53821f7ef18d8b509a5030f5199afdbef3f6a2
 }
