@@ -166,40 +166,6 @@ body {
 }
 
 
-.main-catalog {
-    display: flex;
-    height: 40vh;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 6em;
-
-    /* display: grid;
-    height: 40vh;
-    grid-template-columns: repeat(8, 1fr);
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    justify-items: center;
-    gap: 4em;*/
-}
-
-/*.main-catalog_img {
-    width: 5vw;
-    height: 10vh;
-}*/
-
-.main-catalog__block {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2em;
-}
-
-.main-catalog_img-sweatshirt {
-    max-height: 8vh;
-    max-width: 4vw;
-}
 
 
 .main-product_cards {
