@@ -1,17 +1,17 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 0.9em;
     color: #565656;
 }
 
 .header-container {
     display: grid;
-    grid-template-rows: 1fr 70px 1fr;
+    grid-template-rows: 1fr 10vh 1fr;
     grid-template-areas:
         "header-title"
         "header-menu"
         "header-search";
-    height: 180px;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 1.5em;
 }
 
 .header-menu__center {
@@ -51,32 +51,31 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 40px;
-}
-
-.header-menu__button {
-    height: 40px;
-    width: 90px;
-
-    border-radius: 20px;
-    background: #ED1331;
+    column-gap: 3.5em;
 }
 
 .header-menu__link-button {
-    position: relative;
-    top: 12px;
-    left: 25px;
-    text-transform: uppercase;
+    padding: 1.9vh 2vw;
+    border-radius: 2em;
     text-decoration: none;
     color: #FFFFFF;
+    background-color: #ED1331;
 }
+
+.header-menu__link-woman {
+    padding: 3.8vh 2vw;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #2B2B2B;
+}
+
 
 .header-menu__right {
     grid-column: 3/4;
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 1.5em;
 }
 
 .header-menu__link {
@@ -96,5 +95,117 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     column-gap: 30px;
+=======
+    column-gap: 2.5em;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "main-banner"
+        "main-catalog"
+        "main-product_cards";
+}
+
+.main-banner {
+    grid-area: main-banner;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner__background {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+/* подумать как по другому разместить блок по центру*/
+
+.main-banner__center {
+    position: absolute;
+    left: 31.3%;
+    top: 40%;
+    width: 37vw;
+    height: 50vh;
+    border-radius: 20px;
+    color: #1D1D1D;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-banner__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner__title {
+    margin: 0;
+    font-size: 4.5em;
+}
+
+.main-banner__text {
+    font-size: 2em;
+}
+
+.main-banner__button {
+    height: 6vh;
+    width: 10vw;
+    text-align: center;
+    border-radius: 2em;
+    background-color: #404444;
+}
+
+.main-banner__link-button {
+    line-height: 3.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.main-catalog {
+    display: flex;
+    height: 40vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6em;
+
+    /* display: grid;
+    height: 40vh;
+    grid-template-columns: repeat(8, 1fr);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    justify-items: center;
+    gap: 4em;*/
+}
+
+/*.main-catalog_img {
+    width: 5vw;
+    height: 10vh;
+}*/
+
+.main-catalog__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.main-catalog_img-sweatshirt {
+    max-height: 8vh;
+    max-width: 4vw;
+}
+
+
+.main-product_cards {
+    grid-area: main-product_cards;
+>>>>>>> bc53821f7ef18d8b509a5030f5199afdbef3f6a2
 }
