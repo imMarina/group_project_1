@@ -2,25 +2,12 @@
     display: flex;
     height: 40vh;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 2.3em;
-
-    /* display: grid;
-    height: 40vh;
-    grid-template-columns: repeat(8, 1fr);
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    justify-items: center;
-    gap: 4em;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    /*    column-gap: 2.3em;*/
 }
-
-/*.main-catalog_img {
-    width: 5vw;
-    height: 10vh;
-}*/
 
 .main-catalog__block {
     display: flex;
@@ -28,42 +15,20 @@
     justify-content: center;
     align-items: center;
     row-gap: 2em;
-    border: 2px solid red;
 }
 
 .main-catalog__round {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 8vw;
     height: 16vh;
     border-radius: 50%;
     background: #f1f1f1d5;
 }
 
-.main-catalog__round img {
-    position: absolute;
-    top: 20%;
-    left: 20%;
+.main-catalog__block a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1D1D1D;
 }
-
-
-/*.main-catalog_img,
-.main-catalog_img-sweatshirt {
-    position: relative;
-    top: 20%;
-    left: 22%;
-    /*    display: block;
-    margin-right: auto;
-    margin-left: auto;*/
-}
-
-
-/*.main-catalog_img {
-    width: 5vw;
-    height: 10vh;
-}*/
-
-
-/*.main-catalog_img-sweatshirt {
-    max-height: 8vh;
-    max-width: 4vw;
-}*/
