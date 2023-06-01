@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 6em;
+    column-gap: 2.3em;
 
     /* display: grid;
     height: 40vh;
@@ -25,10 +25,45 @@
 .main-catalog__block {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     row-gap: 2em;
+    border: 2px solid red;
 }
 
+.main-catalog__round {
+    position: relative;
+    width: 8vw;
+    height: 16vh;
+    border-radius: 50%;
+    background: #f1f1f1d5;
+}
+
+.main-catalog__round img {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+
+/*.main-catalog_img,
 .main-catalog_img-sweatshirt {
+    position: relative;
+    top: 20%;
+    left: 22%;
+    /*    display: block;
+    margin-right: auto;
+    margin-left: auto;*/
+}
+
+
+/*.main-catalog_img {
+    width: 5vw;
+    height: 10vh;
+}*/
+
+
+/*.main-catalog_img-sweatshirt {
     max-height: 8vh;
     max-width: 4vw;
-}
+}*/
