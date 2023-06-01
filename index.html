@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин одежды</title>
     <link rel="stylesheet" href="style_common.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="styles/main_section_2.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -128,11 +131,41 @@
 
         <section class="main-product_cards"></section>
     </main>
-    <footer>
-        <div class="footer-support"></div>
-        <nav class="footer-search"></nav>
-        <div class="footer-about_the_company"></div>
-        <div class="footer-copyright"></div>
+    <footer class="footer-container">
+        <nav class="footer-navigation">
+            <div class="footer-navigation__support">
+                <p class="footer-navigation__title">ПОМОЩЬ</p>
+                <a class="footer-navigation__link" href="">Мой аккаунт</a>
+                <a class="footer-navigation__link" href="">Где мой магазин</a>
+                <a class="footer-navigation__link" href="">Доставка и оплата</a>
+                <a class="footer-navigation__link" href="">Правила возврата</a>
+                <a class="footer-navigation__link" href="">Найти магазин</a>
+                <a class="footer-navigation__link" href="">Подобрать размер</a>
+            </div>
+            <div class="footer-navigation__search">
+                <p class="footer-navigation__title">КАТАЛОГ</p>
+                <a class="footer-navigation__link" href="">Новинки</a>
+                <a class="footer-navigation__link" href="">Одежда</a>
+                <a class="footer-navigation__link" href="">Обувь</a>
+                <a class="footer-navigation__link" href="">Аксессуары</a>
+                <a class="footer-navigation__link" href="">Любимые бренды</a>
+                <a class="footer-navigation__link link-sale" href="">Sale%</a>
+            </div>
+            <div class="footer-navigation__about_the_company">
+                <p class="footer-navigation__title">КОМПАНИЯ</p>
+                <a class="footer-navigation__link" href="">О нас</a>
+                <a class="footer-navigation__link" href="">Философия бренда</a>
+                <a class="footer-navigation__link" href="">Блог</a>
+                <a class="footer-navigation__link" href="">Контакты</a>
+                <a class="footer-navigation__link" href="">FAQ</a>
+            </div>
+        </nav>
+        <div class="footer-payment">
+            <img src="./image/Visa.svg" alt="Visa">
+            <img src="./image/Mastercard.svg" alt="Mastercard">
+            <img src="./image/Mir.svg" alt="Mir">
+        </div>
+        <div class="footer-copyright">© Copyright 2022 very neat. All Rights reserved. Условия пользования сайтом</div>
     </footer>
 </body>
 

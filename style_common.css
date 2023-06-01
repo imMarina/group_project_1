@@ -95,6 +95,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 30px;
     column-gap: 2.5em;
 }
 
