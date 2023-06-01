@@ -1,0 +1,57 @@
+.main-banner {
+    grid-area: main-banner;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner__background {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+/* подумать как по другому разместить блок по центру*/
+
+.main-banner__center {
+    position: absolute;
+    left: 31.3%;
+    top: 40%;
+    width: 37vw;
+    height: 50vh;
+    border-radius: 20px;
+    color: #1D1D1D;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-banner__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner__title {
+    margin: 0;
+    font-size: 4.5em;
+}
+
+.main-banner__text {
+    font-size: 2em;
+}
+
+.main-banner__button {
+    height: 6vh;
+    width: 10vw;
+    text-align: center;
+    border-radius: 2em;
+    background-color: #404444;
+}
+
+.main-banner__link-button {
+    line-height: 3.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
