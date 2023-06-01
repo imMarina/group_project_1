@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- валидатор выдает ошибку на гугл фонтс линк -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
 </head>
@@ -19,14 +20,17 @@
         <div class="header-title">Lorem ipsum is placeholder text commonly used -20%</div>
         <nav class="header-menu">
             <div class="header-menu__left">
-                <span class="header-menu__left-item1">Logo</span>
-                <div class="header-menu__left-item2">
+                <span>Logo</span>
+                <div>
                     <img src="image/icon_location.svg" alt="Logo">
                     <span>москва</span>
                 </div>
             </div>
             <div class="header-menu__center">
-                <button class="header-menu__button"><a class="header-menu__link" href="#">Sale</a></button>
+                <!-- с кнопкой надо еще поработать, найти альтернативный вариант реализации  -->
+                <div class="header-menu__button">
+                    <a class="header-menu__link-button" href="">Sale</a>
+                </div>
                 <a class="header-menu__link" href="#">Женщинам</a>
                 <a class="header-menu__link" href="#">Мужчинам</a>
                 <a class="header-menu__link" href="#">детям</a>
@@ -47,8 +51,23 @@
         </div>
     </header>
 
-    <main>
-        <section class="main-banner"></section>
+    <main class="main-container">
+        <section class="main-banner">
+            <div class="main-banner__background">
+                <img src="image/Banner_man.png" alt="Model man">
+                <img src="image/Banner_woman.png" alt="Model woman">
+                <img src="image/Banner_girl.png" alt="Model girl">
+            </div>
+            <div class="main-banner__center">
+                <img class="main-banner__background_2" src="image/Background_center.png" alt="">
+                <h1>Spring mood</h1>
+                <p>-20% на новую коллекцию.</p>
+                <!-- с кнопкой надо еще поработать, найти альтернативный вариант реализации  -->
+                <div class="main-banner__button">
+                    <a class="link-button" href="">В каталог</a>
+                </div>
+            </div>
+        </section>
         <section class="main-catalog"></section>
         <section class="main-product_cards"></section>
     </main>
