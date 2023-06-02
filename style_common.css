@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
     color: #565656;
+    background-color: #FCFCFC;
 }
 
 .header-container {
@@ -15,6 +16,11 @@ body {
     width: 100%;
 }
 
+.header-container {
+    position: fixed;
+    z-index: 1;
+}
+
 .header-title,
 .header-menu,
 .header-search {
@@ -26,6 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #FCFCFC;
 }
 
 .header-menu {
@@ -91,6 +98,7 @@ body {
     align-items: center;
     column-gap: 30px;
     column-gap: 2.5em;
+    background: #FCFCFC;
 }
 
 .header-menu__link_2 {
@@ -107,12 +115,17 @@ body {
         "main-product_cards";
 }
 
+.main-container {
+    padding-top: 27vh;
+}
+
 .main-banner {
     grid-area: main-banner;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 600px;
 }
 
 .main-banner__background {
