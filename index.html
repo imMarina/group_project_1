@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main_section_product_cards.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- валидатор выдает ошибку на гугл фонтс линк -->
@@ -23,7 +24,7 @@
         <div class="header-menu">
             <div class="header-menu__left">
                 <h1>Logo</h1>
-                <img src="image/icon_location.svg" alt="Logo">
+                <img class="header-menu__left-logo_location" src="image/icon_location.svg" alt="Logo">
                 <form>
                     <label for="city-select"></label>
                     <select id="city-select" name="city">
@@ -46,8 +47,8 @@
             <nav class="header-menu__right">
                 <a href=""><img src="image/icon_magnifying.svg" alt="Magnifying glass"></a>
                 <a href=""><img src="image/icon_user.svg" alt="User"></a>
-                <a href="Heart"><img src="image/Icon_heart.svg" alt=""></a>
-                <a href=""><img src="image/icon_bag.svg" alt="Shopping bag"></a>
+                <a class="header-menu__right-logo_heart" href="Heart"><img src="image/Icon_heart.svg" alt=""></a>
+                <a class="header-menu__right-logo_bag" href=""><img src="image/icon_bag.svg" alt="Shopping bag"></a>
             </nav>
         </div>
         <nav class="header-search">
