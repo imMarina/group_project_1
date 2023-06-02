@@ -25,17 +25,17 @@
                 <h1>Logo</h1>
                 <img src="image/icon_location.svg" alt="Logo">
                 <form>
-                    <select>
+                    <label for="city-select"></label>
+                    <select id="city-select" name="city">
                         <option class="disabled" disabled>Укажите регион доставки</option>
-                        <option class="option_in_the_title" selected="selected">Москва</option>
-                        <option>Санкт-Петербург</option>
-                        <option>Екатеринбург</option>
-                        <option>Казань</option>
-                        <option>Краснодар</option>
-                        <option>Уфа</option>
+                        <option class="option_in_the_title" selected="selected" value="Moscow">Москва</option>
+                        <option value="Saint Petersburg">Санкт-Петербург</option>
+                        <option value="Ekaterinburg">Екатеринбург</option>
+                        <option value="kazan">Казань</option>
+                        <option value="Krasnodar">Краснодар</option>
+                        <option value="Ufa">Уфа</option>
                     </select>
-                </form> <!-- is in process -->
-                <!-- <span>москва</span> -->
+                </form> <!-- Marina: не могу изменить шрифт в МОСКВА -->
             </div>
             <nav class="header-menu__center">
                 <a class="header-menu__link-button" href="">Sale</a>

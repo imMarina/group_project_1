@@ -55,6 +55,7 @@ body {
 .header-menu__left h1 {
     padding-left: 10%;
     padding-right: 10%;
+    font-size: 1em;
 }
 
 .header-menu__left img {
@@ -62,7 +63,7 @@ body {
 }
 
 select {
-    width: 50%;
+    width: 100%;
     border: 0;
     outline: 0;
     appearance: none;
@@ -74,6 +75,8 @@ select {
     font-size: 0.8em;
     color: #565656;
 }
+
+.option_in_the_title {}
 
 option {
     width: 50%;
