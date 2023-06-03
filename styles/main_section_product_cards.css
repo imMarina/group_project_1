@@ -15,32 +15,80 @@
 .main-product_cards__header_catalog {
     text-decoration: none;
     text-transform: uppercase;
-    color: #565656; /*сделать расстояяние между стрелочкой и надписью*/
+    color: #565656; /*сделать расстояние между стрелочкой и надписью*/
 }
 
 .main-product_cards__goods {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /*display: grid;
     grid-template-columns: repeat(auto-fill, minmax (150px, 1fr)); /*не получается сделать в одну строку. Когда ставлю все во флекс, карточки встают в ряд. Но с флексом не получается сделать что-то по типу авто-филл*/
 }
 
 .main-product_cards__goods_unit {
-    width: minmax(150px, 300px);
+width: minmax(20vw, 300px); /*у меня тут прямо какие-то огромные проблемы с шириной карточек*/
 }
 
-.main-product_cards__product_photo {}
+.main-product_cards__goods_image{
+    position: relative;
+    z-index: 1;
+}
+.main-product_cards__product_photo {
+    width: minmax(20vw, 300px);
+}
 
-.main-product_cards__like {}
+.main-product_cards__like {
+    border: none;
+    background-color: #fffdfd00;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 2;
+    cursor: pointer;
+}
 
-.main-product_cards__label_new {}
+.main-product_cards__label_new {
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #13ED1C;
+    width: 15%;
+    text-align: center;
+    padding: 3px;
+    margin: 0;
 
-.main-product_cards__price {}
+    position: absolute;
+    bottom: 0.75%;
+    left: 0%;
+    z-index: 2;
+}
 
-.main-product_cards__shopbag {}
+.main-product_cards__price_and_bag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-product_cards__price {
+    font-weight: bold;
+    color: #1D1D1D;
+}
+
+.main-product_cards__shopbag {
+    border: none;
+    background-color: #fffdfd00;
+    cursor: pointer;
+}
 
 .main-product_cards__product_brand,
-.main-product_cards__product_name {}
+.main-product_cards__product_name {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1D1D1D;
+}
 
 .main-product_cards__size {
     display: flex;
     gap: 10px;
+    color: #565656;
 }

@@ -7,6 +7,9 @@
         "header-search";
     height: 25vh;
     width: 100vw;
+    
+    position: relative;
+    z-index: 5;
 }
 
 .header-title,
