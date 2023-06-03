@@ -8,6 +8,12 @@ body {
     background-color: #FCFCFC;
 }
 
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .header-container {
     display: grid;
     grid-template-rows: 1fr 10vh 1fr;

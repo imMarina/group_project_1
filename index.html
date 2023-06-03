@@ -24,230 +24,244 @@
 </head>
 
 <body>
-    <header class="header-container">
-        <div class="header-title">Lorem ipsum is placeholder text commonly used -20%</div>
-        <div class="header-menu">
-            <div class="header-menu__left">
-                <h1>Logo</h1>
-                <img src="image/icon_location.svg" alt="Logo">
-                <form>
-                    <label for="city-select"></label>
-                    <select id="city-select" name="city">
-                        <option class="disabled" disabled>Укажите регион доставки</option>
-                        <option class="option_in_the_title" selected="selected" value="Moscow">Москва</option>
-                        <option value="Saint Petersburg">Санкт-Петербург</option>
-                        <option value="Ekaterinburg">Екатеринбург</option>
-                        <option value="Kazan">Казань</option>
-                        <option value="Krasnodar">Краснодар</option>
-                        <option value="Ufa">Уфа</option>
-                    </select>
-                </form> <!-- Marina: не могу изменить шрифт в МОСКВА -->
+    <div class="page">
+        <header class="header-container">
+            <div class="header-title">Lorem ipsum is placeholder text commonly used -20%</div>
+            <div class="header-menu">
+                <div class="header-menu__left">
+                    <h1>Logo</h1>
+                    <img src="image/icon_location.svg" alt="Logo">
+                    <form>
+                        <label for="city-select"></label>
+                        <select id="city-select" name="city">
+                            <option class="disabled" disabled>Укажите регион доставки</option>
+                            <option class="option_in_the_title" selected="selected" value="Moscow">Москва</option>
+                            <option value="Saint Petersburg">Санкт-Петербург</option>
+                            <option value="Ekaterinburg">Екатеринбург</option>
+                            <option value="Kazan">Казань</option>
+                            <option value="Krasnodar">Краснодар</option>
+                            <option value="Ufa">Уфа</option>
+                        </select>
+                    </form> <!-- Marina: не могу изменить шрифт в МОСКВА -->
+                </div>
+                <nav class="header-menu__center">
+                    <a class="header-menu__link-button" href="">Sale</a>
+                    <a class="header-menu__link-woman" href="#">Женщинам</a>
+                    <a class="header-menu__link" href="#">Мужчинам</a>
+                    <a class="header-menu__link" href="#">детям</a>
+                </nav>
+                <nav class="header-menu__right">
+                    <a href=""><img src="image/icon_magnifying.svg" alt="Magnifying glass"></a>
+                    <a href=""><img src="image/icon_user.svg" alt="User"></a>
+                    <a class="header-menu__right-logo_heart" href="Heart"><img src="image/Icon_heart.svg" alt=""></a>
+                    <a class="header-menu__right-logo_bag" href=""><img src="image/icon_bag.svg" alt="Shopping bag"></a>
+                </nav>
             </div>
-            <nav class="header-menu__center">
-                <a class="header-menu__link-button" href="">Sale</a>
-                <a class="header-menu__link-woman" href="#">Женщинам</a>
-                <a class="header-menu__link" href="#">Мужчинам</a>
-                <a class="header-menu__link" href="#">детям</a>
+            <nav class="header-menu_list">
+                <a class="header-menu__link_2" href="">Новинки</a>
+                <a class="header-menu__link_2" href="">Одежда</a>
+                <a class="header-menu__link_2" href="">Обувь</a>
+                <a class="header-menu__link_2" href="">Аксессуары</a>
+                <a class="header-menu__link_2" href="">Любимые бренды</a>
             </nav>
-            <nav class="header-menu__right">
-                <a href=""><img src="image/icon_magnifying.svg" alt="Magnifying glass"></a>
-                <a href=""><img src="image/icon_user.svg" alt="User"></a>
-                <a class="header-menu__right-logo_heart" href="Heart"><img src="image/Icon_heart.svg" alt=""></a>
-                <a class="header-menu__right-logo_bag" href=""><img src="image/icon_bag.svg" alt="Shopping bag"></a>
+        </header>
+
+        <main class="main-container">
+            <section class="main-banner">
+                <div class="main-banner__background">
+                    <img class="main-banner__img" src="image/Banner_man.png" alt="Model man">
+                    <img class="main-banner__img" src="image/Banner_woman.png" alt="Model woman">
+                    <img class="main-banner__img" src="image/Banner_girl.png" alt="Model girl">
+                </div>
+                <div class="main-banner__center">
+                    <h1 class="main-banner__title">Spring mood</h1>
+                    <p class="main-banner__text">-20% на новую коллекцию.</p>
+                    <div class="main-banner__button">
+                        <a class="main-banner__link-button" href="">В каталог</a>
+                        <a href=""><img src="image/Arrow.svg" alt="Arrow"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-catalog">
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_tshirt.svg" alt="T-shirt">
+                    </div>
+                    <a href="">Футболки</a>
+                </div>
+
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_hoodie.svg" alt="Hoodie">
+                    </div>
+                    <a href="">Худи</a>
+                </div>
+
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_sweatshirt.svg" alt="Sweatshirt">
+                    </div>
+                    <a href="">Свитшоты</a>
+                </div>
+
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_longsleeve.svg" alt="Longsleeve">
+                    </div>
+                    <a href="">Лонгсливы</a>
+                </div>
+
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_shirt.svg" alt="Shirt">
+                    </div>
+                    <a href="">Рубашки</a>
+                </div>
+
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_sweater.svg" alt="Sweater">
+                    </div>
+                    <a href="">Свитера</a>
+                </div>
+
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_jeans.svg" alt="Jeans">
+                    </div>
+                    <a href="">Джинсы</a>
+                </div>
+
+                <div class="main-catalog__block">
+                    <div class="main-catalog__round">
+                        <img src="image/clothes_trousers.svg" alt="Trousers">
+                    </div>
+                    <a href="">Штаны</a>
+                </div>
+            </section>
+
+            <section class="main-product_cards">
+                <div class="main-product_cards__header">
+                    <h2 class="main-product_cards__title">Популярное</h2>
+                    <a class="main-product_cards__header_catalog" href="">В каталог <img
+                            src="./image/arrow_to_directory.svg" alt="стрелка">
+                    </a>
+                </div>
+
+                <div class="main-product_cards__goods">
+                    <div class="main-product_cards__goods_unit">
+                        <div class="main-product_cards__goods_image">
+                            <img class="main-product_cards__product_photo" src="./image/zip-hoodie1.png"
+                                alt="Зип худи шерпа  с капюшоном (белый)">
+                            <button class="main-product_cards__like"><img src="./image/icon_like.svg"
+                                    alt="Добавить в избранное"></button>
+                            <p class="main-product_cards__label_new">New</p>
+                        </div>
+                        <div class="main-product_cards__price_and_bag">
+                            <h3 class="main-product_cards__price">3990 ₽</h3>
+                            <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg"
+                                    alt="Положить в корзину"></button>
+                        </div>
+                        <p class="main-product_cards__product_brand">Stone Island</p>
+                        <p class="main-product_cards__product_name">Зип худи шерпа с капюшоном (белый)</p>
+                        <div class="main-product_cards__size">
+                            <p>40</p>
+                            <!--может тут сделать ссылку или кнопку? по сути тут мы выбираем размер, а не просто информируем-->
+                            <p>46</p>
+                            <p>52</p>
+                            <p>58</p>
+                        </div>
+                    </div>
+                    <div class="main-product_cards__goods_unit">
+                        <div class="main-product_cards__goods_image">
+                            <img class="main-product_cards__product_photo" src="./image/zip-hoodie2.png"
+                                alt="Тёплая жилетка (белый)">
+                            <button class="main-product_cards__like"><img src="./image/icon_like.svg"
+                                    alt="Добавить в избранное"></button>
+                            <p class="main-product_cards__label_new">New</p>
+                        </div>
+                        <div class="main-product_cards__price_and_bag">
+                            <h3 class="main-product_cards__price">3990 ₽</h3>
+                            <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg"
+                                    alt="Положить в корзину"></button>
+                        </div>
+                        <p class="main-product_cards__product_brand">Stone Island</p>
+                        <p class="main-product_cards__product_name">Тёплая жилетка (белый)</p>
+                    </div>
+                    <div class="main-product_cards__goods_unit">
+                        <div class="main-product_cards__goods_image">
+                            <img class="main-product_cards__product_photo" src="./image/zip-hoodie3.png"
+                                alt="Зип худи (черный)">
+                            <button class="main-product_cards__like"><img src="./image/icon_like.svg"
+                                    alt="Добавить в избранное"></button>
+                            <p class="main-product_cards__label_new">New</p>
+                        </div>
+                        <div class="main-product_cards__price_and_bag">
+                            <h3 class="main-product_cards__price">3990 ₽</h3>
+                            <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg"
+                                    alt="Положить в корзину"></button>
+                        </div>
+                        <p class="main-product_cards__product_brand">Stone Island</p>
+                        <p class="main-product_cards__product_name">Зип худи (черный)</p>
+                    </div>
+                    <div class="main-product_cards__goods_unit">
+                        <div class="main-product_cards__goods_image">
+                            <img class="main-product_cards__product_photo" src="./image/zip-hoodie4.png"
+                                alt="Зип худи шерпа  с капюшоном (белый)">
+                            <button class="main-product_cards__like"><img src="./image/icon_like.svg"
+                                    alt="Добавить в избранное"></button>
+                            <p class="main-product_cards__label_new">New</p>
+                        </div>
+                        <div class="main-product_cards__price_and_bag">
+                            <h3 class="main-product_cards__price">3990 ₽</h3>
+                            <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg"
+                                    alt="Положить в корзину"></button>
+                        </div>
+                        <p class="main-product_cards__product_brand">Stone Island</p>
+                        <p class="main-product_cards__product_name">Зип худи шерпа с капюшоном (белый)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-container">
+            <nav class="footer-navigation">
+                <div class="footer-navigation__support">
+                    <p class="footer-navigation__title">ПОМОЩЬ</p>
+                    <a class="footer-navigation__link" href="">Мой аккаунт</a>
+                    <a class="footer-navigation__link" href="">Где мой магазин</a>
+                    <a class="footer-navigation__link" href="">Доставка и оплата</a>
+                    <a class="footer-navigation__link" href="">Правила возврата</a>
+                    <a class="footer-navigation__link" href="">Найти магазин</a>
+                    <a class="footer-navigation__link" href="">Подобрать размер</a>
+                </div>
+                <div class="footer-navigation__search">
+                    <p class="footer-navigation__title">КАТАЛОГ</p>
+                    <a class="footer-navigation__link" href="">Новинки</a>
+                    <a class="footer-navigation__link" href="">Одежда</a>
+                    <a class="footer-navigation__link" href="">Обувь</a>
+                    <a class="footer-navigation__link" href="">Аксессуары</a>
+                    <a class="footer-navigation__link" href="">Любимые бренды</a>
+                    <a class="footer-navigation__link link-sale" href="">Sale%</a>
+                </div>
+                <div class="footer-navigation__about_the_company">
+                    <p class="footer-navigation__title">КОМПАНИЯ</p>
+                    <a class="footer-navigation__link" href="">О нас</a>
+                    <a class="footer-navigation__link" href="">Философия бренда</a>
+                    <a class="footer-navigation__link" href="">Блог</a>
+                    <a class="footer-navigation__link" href="">Контакты</a>
+                    <a class="footer-navigation__link" href="">FAQ</a>
+                </div>
             </nav>
-        </div>
-        <nav class="header-menu_list">
-            <a class="header-menu__link_2" href="">Новинки</a>
-            <a class="header-menu__link_2" href="">Одежда</a>
-            <a class="header-menu__link_2" href="">Обувь</a>
-            <a class="header-menu__link_2" href="">Аксессуары</a>
-            <a class="header-menu__link_2" href="">Любимые бренды</a>
-        </nav>
-    </header>
-
-    <main class="main-container">
-        <section class="main-banner">
-            <div class="main-banner__background">
-                <img class="main-banner__img" src="image/Banner_man.png" alt="Model man">
-                <img class="main-banner__img" src="image/Banner_woman.png" alt="Model woman">
-                <img class="main-banner__img" src="image/Banner_girl.png" alt="Model girl">
+            <div class="footer-payment">
+                <img src="./image/Visa.svg" alt="Visa">
+                <img src="./image/Mastercard.svg" alt="Mastercard">
+                <img src="./image/Mir.svg" alt="Mir">
             </div>
-            <div class="main-banner__center">
-                <h1 class="main-banner__title">Spring mood</h1>
-                <p class="main-banner__text">-20% на новую коллекцию.</p>
-                <div class="main-banner__button">
-                    <a class="main-banner__link-button" href="">В каталог</a>
-                    <a href=""><img src="image/Arrow.svg" alt="Arrow"></a>
-                </div>
+            <div class="footer-copyright">© Copyright 2022 very neat. All Rights reserved. Условия пользования сайтом
             </div>
-        </section>
-
-        <section class="main-catalog">
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_tshirt.svg" alt="T-shirt">
-                </div>
-                <a href="">Футболки</a>
-            </div>
-
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_hoodie.svg" alt="Hoodie">
-                </div>
-                <a href="">Худи</a>
-            </div>
-
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_sweatshirt.svg" alt="Sweatshirt">
-                </div>
-                <a href="">Свитшоты</a>
-            </div>
-
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_longsleeve.svg" alt="Longsleeve">
-                </div>
-                <a href="">Лонгсливы</a>
-            </div>
-
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_shirt.svg" alt="Shirt">
-                </div>
-                <a href="">Рубашки</a>
-            </div>
-
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_sweater.svg" alt="Sweater">
-                </div>
-                <a href="">Свитера</a>
-            </div>
-
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_jeans.svg" alt="Jeans">
-                </div>
-                <a href="">Джинсы</a>
-            </div>
-
-            <div class="main-catalog__block">
-                <div class="main-catalog__round">
-                    <img src="image/clothes_trousers.svg" alt="Trousers">
-                </div>
-                <a href="">Штаны</a>
-            </div>
-        </section>
-
-        <section class="main-product_cards">
-            <div class="main-product_cards__header">
-                <h2 class="main-product_cards__title">Популярное</h2>
-                <a class="main-product_cards__header_catalog" href="">В каталог <img
-                        src="./image/arrow_to_directory.svg" alt="стрелка">
-                </a>
-            </div>
-
-            <div class="main-product_cards__goods">
-                <div class="main-product_cards__goods_unit">
-                    <div class="main-product_cards__goods_image">
-                        <img class="main-product_cards__product_photo" src="./image/zip-hoodie1.png"
-                        alt="Зип худи шерпа  с капюшоном (белый)">
-                        <button class="main-product_cards__like"><img src="./image/icon_like.svg" alt="Добавить в избранное"></button>
-                        <p class="main-product_cards__label_new">New</p>
-                    </div>
-                    <div class="main-product_cards__price_and_bag">
-                        <h3 class="main-product_cards__price">3990 ₽</h3>
-                        <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg" alt="Положить в корзину"></button>
-                    </div>
-                    <p class="main-product_cards__product_brand">Stone Island</p>
-                    <p class="main-product_cards__product_name">Зип худи шерпа с капюшоном (белый)</p>
-                    <div class="main-product_cards__size">
-                        <p>40</p>
-                        <!--может тут сделать ссылку или кнопку? по сути тут мы выбираем размер, а не просто информируем-->
-                        <p>46</p>
-                        <p>52</p>
-                        <p>58</p>
-                    </div>
-                </div>
-                <div class="main-product_cards__goods_unit">
-                    <div class="main-product_cards__goods_image">
-                        <img class="main-product_cards__product_photo" src="./image/zip-hoodie2.png" alt="Тёплая жилетка (белый)">
-                        <button class="main-product_cards__like"><img src="./image/icon_like.svg" alt="Добавить в избранное"></button>
-                        <p class="main-product_cards__label_new">New</p>
-                    </div>
-                    <div class="main-product_cards__price_and_bag">
-                        <h3 class="main-product_cards__price">3990 ₽</h3>
-                        <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg" alt="Положить в корзину"></button>
-                    </div>
-                    <p class="main-product_cards__product_brand">Stone Island</p>
-                    <p class="main-product_cards__product_name">Тёплая жилетка (белый)</p>
-                </div>
-                <div class="main-product_cards__goods_unit">
-                    <div class="main-product_cards__goods_image">
-                        <img class="main-product_cards__product_photo" src="./image/zip-hoodie3.png" alt="Зип худи (черный)">
-                        <button class="main-product_cards__like"><img src="./image/icon_like.svg" alt="Добавить в избранное"></button>
-                        <p class="main-product_cards__label_new">New</p>
-                    </div>
-                    <div class="main-product_cards__price_and_bag">
-                        <h3 class="main-product_cards__price">3990 ₽</h3>
-                        <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg" alt="Положить в корзину"></button>
-                    </div>
-                    <p class="main-product_cards__product_brand">Stone Island</p>
-                    <p class="main-product_cards__product_name">Зип худи (черный)</p>
-                </div>
-                <div class="main-product_cards__goods_unit">
-                    <div class="main-product_cards__goods_image">
-                        <img class="main-product_cards__product_photo" src="./image/zip-hoodie4.png" alt="Зип худи шерпа  с капюшоном (белый)">
-                        <button class="main-product_cards__like"><img src="./image/icon_like.svg" alt="Добавить в избранное"></button>
-                        <p class="main-product_cards__label_new">New</p>
-                    </div>
-                    <div class="main-product_cards__price_and_bag">
-                        <h3 class="main-product_cards__price">3990 ₽</h3>
-                        <button class="main-product_cards__shopbag"><img src="./image/icon_shopbag.svg" alt="Положить в корзину"></button>
-                    </div>
-                    <p class="main-product_cards__product_brand">Stone Island</p>
-                    <p class="main-product_cards__product_name">Зип худи шерпа с капюшоном (белый)</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-container">
-        <nav class="footer-navigation">
-            <div class="footer-navigation__support">
-                <p class="footer-navigation__title">ПОМОЩЬ</p>
-                <a class="footer-navigation__link" href="">Мой аккаунт</a>
-                <a class="footer-navigation__link" href="">Где мой магазин</a>
-                <a class="footer-navigation__link" href="">Доставка и оплата</a>
-                <a class="footer-navigation__link" href="">Правила возврата</a>
-                <a class="footer-navigation__link" href="">Найти магазин</a>
-                <a class="footer-navigation__link" href="">Подобрать размер</a>
-            </div>
-            <div class="footer-navigation__search">
-                <p class="footer-navigation__title">КАТАЛОГ</p>
-                <a class="footer-navigation__link" href="">Новинки</a>
-                <a class="footer-navigation__link" href="">Одежда</a>
-                <a class="footer-navigation__link" href="">Обувь</a>
-                <a class="footer-navigation__link" href="">Аксессуары</a>
-                <a class="footer-navigation__link" href="">Любимые бренды</a>
-                <a class="footer-navigation__link link-sale" href="">Sale%</a>
-            </div>
-            <div class="footer-navigation__about_the_company">
-                <p class="footer-navigation__title">КОМПАНИЯ</p>
-                <a class="footer-navigation__link" href="">О нас</a>
-                <a class="footer-navigation__link" href="">Философия бренда</a>
-                <a class="footer-navigation__link" href="">Блог</a>
-                <a class="footer-navigation__link" href="">Контакты</a>
-                <a class="footer-navigation__link" href="">FAQ</a>
-            </div>
-        </nav>
-        <div class="footer-payment">
-            <img src="./image/Visa.svg" alt="Visa">
-            <img src="./image/Mastercard.svg" alt="Mastercard">
-            <img src="./image/Mir.svg" alt="Mir">
-        </div>
-        <div class="footer-copyright">© Copyright 2022 very neat. All Rights reserved. Условия пользования сайтом</div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
