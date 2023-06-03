@@ -1,4 +1,6 @@
 body {
+    height: auto;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 0.9em;
@@ -124,25 +126,27 @@ option .disabled {
     column-gap: 1.5em;
 }
 
-.header-menu__link {
+.header-menu__link,
+.header-menu__link_2 {
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.header-menu__link {
     color: #FFFFFF;
 }
 
-.header-search {
+.header-menu_list {
     grid-area: header-search;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
     column-gap: 2.5em;
     background: #FCFCFC;
 }
 
 .header-menu__link_2 {
-    text-decoration: none;
     color: #565656;
 }
 
@@ -156,7 +160,7 @@ option .disabled {
 }
 
 .main-container {
-    padding-top: 27vh;
+    padding-top: 25vh;
 }
 
 .main-banner {
@@ -165,13 +169,23 @@ option .disabled {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
 }
 
 .main-banner__background {
     display: flex;
     flex-direction: row;
+
+    /*03.06 - vvela novie znaheniya, nuzhno podumat*/
+    justify-content: center;
+    align-items: center;
     gap: 0;
+}
+
+.main-banner__img {
+    height: auto;
+    width: 100%;
+    min-height: 646px;
+    max-width: 430px;
 }
 
 /* подумать как по другому разместить блок по центру*/
