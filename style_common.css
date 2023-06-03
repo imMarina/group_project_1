@@ -1,7 +1,11 @@
 body {
+    height: auto;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 0.9em;
     color: #565656;
+    background-color: #FCFCFC;
 }
 
 .header-container {
@@ -15,6 +19,11 @@ body {
     width: 100%;
 }
 
+.header-container {
+    position: fixed;
+    z-index: 1;
+}
+
 .header-title,
 .header-menu,
 .header-search {
@@ -26,6 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #FCFCFC;
 }
 
 .header-menu {
@@ -41,10 +51,49 @@ body {
 .header-menu__left {
     grid-column: 1/2;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: center;
-    column-gap: 1.5em;
 }
+
+.header-menu__left h1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1em;
+}
+
+.header-menu__left img {
+    padding-right: 2%;
+}
+
+.header-menu__left select {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    appearance: none;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+option {
+    width: 50%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    color: #565656;
+    background-color: #FFFFFF;
+}
+
+option .disabled {
+    font-size: 0.8em;
+    color: #565656;
+}
+
+.option_in_the_title {}
+
 
 .header-menu__center {
     grid-column: 2/3;
@@ -77,24 +126,27 @@ body {
     column-gap: 1.5em;
 }
 
-.header-menu__link {
+.header-menu__link,
+.header-menu__link_2 {
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.header-menu__link {
     color: #FFFFFF;
 }
 
-.header-search {
+.header-menu_list {
     grid-area: header-search;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
     column-gap: 2.5em;
+    background: #FCFCFC;
 }
 
 .header-menu__link_2 {
-    text-decoration: none;
     color: #565656;
 }
 
@@ -105,6 +157,10 @@ body {
         "main-banner"
         "main-catalog"
         "main-product_cards";
+}
+
+.main-container {
+    padding-top: 25vh;
 }
 
 .main-banner {
@@ -118,7 +174,18 @@ body {
 .main-banner__background {
     display: flex;
     flex-direction: row;
+
+    /*03.06 - vvela novie znaheniya, nuzhno podumat*/
+    justify-content: center;
+    align-items: center;
     gap: 0;
+}
+
+.main-banner__img {
+    height: auto;
+    width: 100%;
+    min-height: 646px;
+    max-width: 430px;
 }
 
 /* подумать как по другому разместить блок по центру*/

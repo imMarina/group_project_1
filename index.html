@@ -6,60 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин одежды</title>
-
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/main_section_product_cards.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./style_common.css">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./styles/main_section_product_cards.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- валидатор выдает ошибку на гугл фонтс линк -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:wght@500&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header class="header-container">
         <div class="header-title">Lorem ipsum is placeholder text commonly used -20%</div>
-        <nav class="header-menu">
+        <div class="header-menu">
             <div class="header-menu__left">
-                <img src="" alt="Logo"> <!--Чулпан: Я бы сделала здесь как текст и задала ему стиль-->
-                <div>
-                    <img src="image/icon_location.svg" alt="Logo">
-                    <span>москва</span> <!--Чулпан: тут, мне кажется, можно смело сделать выпадающий список, в котором первоначально будет выбрана Москва, но можно поменять на другой город. Ты как думаешь?-->
-                </div>
+                <h1>Logo</h1>
+                <img src="image/icon_location.svg" alt="Logo">
+                <form>
+                    <label for="city-select"></label>
+                    <select id="city-select" name="city">
+                        <option class="disabled" disabled>Укажите регион доставки</option>
+                        <option class="option_in_the_title" selected="selected" value="Moscow">Москва</option>
+                        <option value="Saint Petersburg">Санкт-Петербург</option>
+                        <option value="Ekaterinburg">Екатеринбург</option>
+                        <option value="kazan">Казань</option>
+                        <option value="Krasnodar">Краснодар</option>
+                        <option value="Ufa">Уфа</option>
+                    </select>
+                </form> <!-- Marina: не могу изменить шрифт в МОСКВА -->
             </div>
-            <div class="header-menu__center">
+            <nav class="header-menu__center">
                 <a class="header-menu__link-button" href="">Sale</a>
                 <a class="header-menu__link-woman" href="#">Женщинам</a>
                 <a class="header-menu__link" href="#">Мужчинам</a>
                 <a class="header-menu__link" href="#">детям</a>
-            </div>
-            <div class="header-menu__right">
-                <a href=""><img src="image/icon_magnifying.svg" alt=""></a>
-                <a href=""><img src="image/icon_user.svg" alt=""></a>
-                <a href=""><img src="image/Icon_heart.svg" alt=""></a>
-                <a href=""><img src="image/icon_bag.svg" alt=""></a> <!--Чулпан: меня кот всегда просил прописывать в альт текст. Сделаем?-->
-            </div>
-        </nav>
-        <div class="header-search">
+            </nav>
+            <nav class="header-menu__right">
+                <a href=""><img src="image/icon_magnifying.svg" alt="Magnifying glass"></a>
+                <a href=""><img src="image/icon_user.svg" alt="User"></a>
+                <a class="header-menu__right-logo_heart" href="Heart"><img src="image/Icon_heart.svg" alt=""></a>
+                <a class="header-menu__right-logo_bag" href=""><img src="image/icon_bag.svg" alt="Shopping bag"></a>
+            </nav>
+        </div>
+        <nav class="header-menu_list">
             <a class="header-menu__link_2" href="">Новинки</a>
             <a class="header-menu__link_2" href="">Одежда</a>
             <a class="header-menu__link_2" href="">Обувь</a>
             <a class="header-menu__link_2" href="">Аксессуары</a>
             <a class="header-menu__link_2" href="">Любимые бренды</a>
-        </div>
+        </nav>
     </header>
 
     <main class="main-container">
         <section class="main-banner">
             <div class="main-banner__background">
-                <img src="image/Banner_man.png" alt="Model man">
-                <img src="image/Banner_woman.png" alt="Model woman">
-                <img src="image/Banner_girl.png" alt="Model girl">
+                <img class="main-banner__img" src="image/Banner_man.png" alt="Model man">
+                <img class="main-banner__img" src="image/Banner_woman.png" alt="Model woman">
+                <img class="main-banner__img" src="image/Banner_girl.png" alt="Model girl">
             </div>
             <div class="main-banner__center">
                 <h1 class="main-banner__title">Spring mood</h1>
@@ -132,28 +143,32 @@
         <section class="main-product_cards">
             <div class="main-product_cards__header">
                 <h2 class="main-product_cards__title">Популярное</h2>
-                <a class="main-product_cards__header_catalog" href="">В каталог <img src="./image/arrow_to_directory.svg" alt="стрелка">
+                <a class="main-product_cards__header_catalog" href="">В каталог <img
+                        src="./image/arrow_to_directory.svg" alt="стрелка">
                 </a>
             </div>
-            
+
             <div class="main-product_cards__goods">
                 <div class="main-product_cards__goods_unit">
-                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie1.png" alt="Зип худи шерпа  с капюшоном (белый)">
+                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie1.png"
+                        alt="Зип худи шерпа  с капюшоном (белый)">
                     <img class="main-product_cards__like" src="./image/icon_like.svg" alt="Добавить в избранное">
                     <p class="main-product_cards__label_new">New</p>
                     <h3 class="main-product_cards__price">3990 ₽</h3>
                     <img class="main-product_cards__shopbag" src="./image/icon_shopbag.svg" alt="Положить в корзину">
                     <p class="main-product_cards__product_brand">Stone Island</p>
-                    <p class="main-product_cards__product_name">Зип худи шерпа  с капюшоном (белый)</p>
+                    <p class="main-product_cards__product_name">Зип худи шерпа с капюшоном (белый)</p>
                     <div class="main-product_cards__size">
-                        <p>40</p> <!--может тут сделать ссылку или кнопку? по сути тут мы выбираем размер, а не просто информируем--> 
+                        <p>40</p>
+                        <!--может тут сделать ссылку или кнопку? по сути тут мы выбираем размер, а не просто информируем-->
                         <p>46</p>
                         <p>52</p>
                         <p>58</p>
                     </div>
                 </div>
                 <div class="main-product_cards__goods_unit">
-                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie2.png" alt="Тёплая жилетка (белый)">
+                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie2.png"
+                        alt="Тёплая жилетка (белый)">
                     <img class="main-product_cards__like" src="./image/icon_like.svg" alt="Добавить в избранное">
                     <p class="main-product_cards__label_new">New</p>
                     <h3 class="main-product_cards__price">3990 ₽</h3>
@@ -162,7 +177,8 @@
                     <p class="main-product_cards__product_name">Тёплая жилетка (белый)</p>
                 </div>
                 <div class="main-product_cards__goods_unit">
-                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie3.png" alt="Зип худи (черный)">
+                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie3.png"
+                        alt="Зип худи (черный)">
                     <img class="main-product_cards__like" src="./image/icon_like.svg" alt="Добавить в избранное">
                     <p class="main-product_cards__label_new">New</p>
                     <h3 class="main-product_cards__price">3990 ₽</h3>
@@ -171,13 +187,14 @@
                     <p class="main-product_cards__product_name">Зип худи (черный)</p>
                 </div>
                 <div class="main-product_cards__goods_unit">
-                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie4.png" alt="Зип худи шерпа  с капюшоном (белый)">
+                    <img class="main-product_cards__product_photo" src="./image/zip-hoodie4.png"
+                        alt="Зип худи шерпа  с капюшоном (белый)">
                     <img class="main-product_cards__like" src="./image/icon_like.svg" alt="Добавить в избранное">
                     <p class="main-product_cards__label_new">New</p>
                     <h3 class="main-product_cards__price">3990 ₽</h3>
                     <img class="main-product_cards__shopbag" src="./image/icon_shopbag.svg" alt="Положить в корзину">
                     <p class="main-product_cards__product_brand">Stone Island</p>
-                    <p class="main-product_cards__product_name">Зип худи шерпа  с капюшоном (белый)</p>
+                    <p class="main-product_cards__product_name">Зип худи шерпа с капюшоном (белый)</p>
                 </div>
             </div>
         </section>
