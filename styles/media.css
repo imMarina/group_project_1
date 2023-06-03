@@ -44,7 +44,7 @@
     padding-right: 2%;
 }
 
-select {
+.header-menu__left select {
     width: 100%;
     border: 0;
     outline: 0;
@@ -52,13 +52,6 @@ select {
     color: #FFFFFF;
     background-color: black;
 }
-
-.disabled {
-    font-size: 0.8em;
-    color: #565656;
-}
-
-.option_in_the_title {}
 
 option {
     width: 50%;
@@ -72,6 +65,15 @@ option {
     color: #565656;
     background-color: #FFFFFF;
 }
+
+option .disabled {
+    font-size: 0.8em;
+    color: #565656;
+}
+
+.option_in_the_title {}
+
+
 
 .header-menu__center {
     grid-column: 2/3;
