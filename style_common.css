@@ -185,37 +185,62 @@ option {
 }
 
 .main-banner {
-    grid-area: main-banner;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+
+
 .main-banner__background {
-    display: flex;
-    flex-direction: row;
-    /*03.06 - vvela novie znaheniya, nuzhno podumat*/
-    justify-content: center;
-    align-items: center;
-    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));*/
+    width: 100%;
 }
 
-.main-banner__img {
+.main-banner__img_1,
+.main-banner__img_2,
+.main-banner__img_3 {
+    display: flex;
+    justify-content: center;
+}
+
+.main-banner__img_1 {
+    background-color: #13ED1C;
+}
+
+.main-banner__img_2 {
+    background-color: #FFF500;
+}
+
+.main-banner__img_3 {
+    background-color: #FF4003;
+}
+
+.main-banner__img_1 img,
+.main-banner__img_2 img,
+.main-banner__img_3 img {
     height: auto;
     width: 100%;
+    max-width: 348px;
     min-height: 646px;
-    max-width: 430px;
 }
 
-/* подумать как по другому разместить блок по центру*/
+.main-banner {
+    position: relative;
+}
 
 .main-banner__center {
     position: absolute;
-    left: 31.3%;
-    top: 40%;
-    width: 37vw;
-    height: 50vh;
+    top: auto;
+
+    height: auto;
+    width: 100%;
+    max-width: 40%;
+    min-height: 60%;
+
     border-radius: 20px;
     color: #1D1D1D;
     background-color: rgba(255, 255, 255, 0.7);
@@ -231,10 +256,12 @@ option {
 .main-banner__title {
     margin: 0;
     font-size: 4.5em;
+    font-weight: 500;
 }
 
 .main-banner__text {
     font-size: 2em;
+    font-weight: 500;
 }
 
 .main-banner__button {
@@ -258,12 +285,6 @@ option {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    /*    margin-left: 10%;
-    margin-right: 10%;*/
-
-    /*    column-gap: 2.3em;*/
-
 }
 
 .main-catalog__block {
