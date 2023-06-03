@@ -25,7 +25,7 @@ body {
     grid-template-areas:
         "header-title"
         "header-menu"
-        "header-search";
+        "header-menu_list";
     height: 25vh;
     width: 100%;
 }
@@ -51,23 +51,22 @@ body {
 
 .header-menu {
     grid-area: header-menu;
-    display: grid;
-    grid-template-columns: 1fr 60vw 1fr;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 75px;
     color: #FFFFFF;
     background-color: black;
 }
 
 .header-menu__left {
-    grid-column: 1/2;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    width: 260px;
 }
 
 .header-menu__left h1 {
-    padding-left: 10%;
     padding-right: 10%;
     font-size: 1em;
 }
@@ -77,12 +76,16 @@ body {
 }
 
 .header-menu__left select {
-    width: 100%;
+    width: 90%;
     border: 0;
     outline: 0;
     appearance: none;
     color: #FFFFFF;
     background-color: black;
+}
+
+select:hover {
+    text-transform: uppercase;
 }
 
 option {
@@ -92,19 +95,15 @@ option {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     color: #565656;
     background-color: #FFFFFF;
 }
 
-option .disabled {
+.disabled {
     font-size: 0.8em;
     color: #565656;
 }
-
-.option_in_the_title {}
-
 
 .header-menu__center {
     grid-column: 2/3;
@@ -122,8 +121,8 @@ option .disabled {
     background-color: #ED1331;
 }
 
-.header-menu__link-woman {
-    padding: 3.5vh 2vw;
+.header-menu__link:hover {
+    padding: 4vh 2vw;
     text-decoration: none;
     color: #FFFFFF;
     background-color: #2B2B2B;
@@ -133,8 +132,14 @@ option .disabled {
     grid-column: 3/4;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
     column-gap: 1.5em;
+    width: 260px;
+}
+
+.header-menu__right img:hover {
+    width: 30px;
 }
 
 .header-menu__link,
@@ -148,13 +153,17 @@ option .disabled {
 }
 
 .header-menu_list {
-    grid-area: header-search;
+    grid-area: header-menu_list;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 2.5em;
     background: #FCFCFC;
+}
+
+.header-menu__link_2:hover {
+    font-size: large;
 }
 
 .header-menu__link_2 {
@@ -171,6 +180,7 @@ option .disabled {
 }
 
 .main-container {
+    padding: 10vh 75px;
     padding-top: 25vh;
 }
 
@@ -185,7 +195,6 @@ option .disabled {
 .main-banner__background {
     display: flex;
     flex-direction: row;
-
     /*03.06 - vvela novie znaheniya, nuzhno podumat*/
     justify-content: center;
     align-items: center;
@@ -249,8 +258,10 @@ option .disabled {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+
+    /*    margin-left: 10%;
+    margin-right: 10%;*/
+
     /*    column-gap: 2.3em;*/
 
 }
