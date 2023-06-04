@@ -370,12 +370,13 @@ option {
 .main-goods__product_cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 0;
+    gap: 30px;
 }
 
 .main-goods__article {
     display: flex;
     flex-direction: column;
+    height: 460px;
     width: 100%;
     border: 1px solid yellow;
 }
@@ -390,6 +391,85 @@ option {
     background-position: left;
     border: 1px solid red;
 }
+
+.main-goods__image_2 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+.main-goods__image_3 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+.main-goods__image_4 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+.main-goods__image_5 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+.main-goods__image_6 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+.main-goods__image_7 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+.main-goods__image_8 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie8.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+
 
 .main-goods__like {
     position: absolute;
@@ -431,17 +511,14 @@ option {
     cursor: pointer;
 }
 
+
+
+
 .main-product_cards__price {
     font-weight: bold;
     color: #1D1D1D;
 }
 
-.main-product_cards__shopbag {}
-
-/* identical to box height, or 20px */
-
-
-color: #1D1D1D;
 
 .main-product_cards__label_new {
     font-weight: 600;
