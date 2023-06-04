@@ -176,7 +176,7 @@ option {
     grid-template-areas:
         "main-banner"
         "main-catalog"
-        "main-product_cards";
+        "main-goods";
 }
 
 .main-container {
@@ -227,6 +227,7 @@ option {
     max-width: 348px;
     min-height: 646px;
 }
+
 
 .main-banner {
     position: relative;
@@ -301,6 +302,7 @@ option {
     align-items: center;
     width: 8vw;
     height: 16vh;
+    cursor: pointer;
     border-radius: 50%;
     background: #f1f1f1d5;
 }
@@ -312,6 +314,176 @@ option {
 }
 
 
-.main-product_cards {
-    grid-area: main-product_cards;
+
+.main-goods {
+    grid-area: main-goods;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+
+/*какой будем делать маржин, по шаблону у всего сайта одинаковый маржин?
+
+Марина: выше я поставила у всего мэйн контейнера, хедеру и футеру отступы не нужны, там бэкграунд заливка своя и расположение текста другое
+
+.main-container {
+    padding: 10vh 75px;
+    padding-top: 25vh;
+}*/
+
+.main-goods__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.main-goods__header h2 {
+    font-weight: 600;
+    font-size: 2.3em;
+    color: #1D1D1D;
+}
+
+.main-goods__header a {
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #565656;
+    /*сделать расстояние между стрелочкой и надписью*/
+}
+
+.main-goods__header-link {
+    margin-left: auto;
+}
+
+.main-goods__header a:hover {
+    font-size: large;
+}
+
+.main-goods__header img:hover {
+    width: 30px;
+}
+
+.main-goods__product_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0;
+}
+
+.main-goods__article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid yellow;
+}
+
+.main-goods__image_1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("./image/zip-hoodie1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid red;
+}
+
+.main-goods__like {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+    border: none;
+    background-color: #fffdfd00;
+}
+
+.main-goods__label {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 4px 6px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #13ED1C;
+}
+
+.main-goods__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main-goods__to_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1D1D1D;
+}
+
+.main-goods__shopping_bag {
+    border: none;
+    background-color: #fffdfd00;
+    cursor: pointer;
+}
+
+.main-product_cards__price {
+    font-weight: bold;
+    color: #1D1D1D;
+}
+
+.main-product_cards__shopbag {}
+
+/* identical to box height, or 20px */
+
+
+color: #1D1D1D;
+
+.main-product_cards__label_new {
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #13ED1C;
+    width: 15%;
+    text-align: center;
+    padding: 3px;
+    margin: 0;
+
+    position: absolute;
+    bottom: 0.75%;
+    left: 0%;
+    z-index: 2;
+}
+
+.main-product_cards__price_and_bag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-product_cards__price {
+    font-weight: bold;
+    color: #1D1D1D;
+}
+
+.main-product_cards__shopbag {
+    border: none;
+    background-color: #fffdfd00;
+    cursor: pointer;
+}
+
+.main-product_cards__product_brand,
+.main-product_cards__product_name {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1D1D1D;
+}
+
+.main-product_cards__size {
+    display: flex;
+    gap: 10px;
+    color: #565656;
 }
