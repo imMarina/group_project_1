@@ -191,8 +191,6 @@ option {
     align-items: center;
 }
 
-
-
 .main-banner__background {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -225,7 +223,7 @@ option {
     height: auto;
     width: 100%;
     max-width: 348px;
-    min-height: 646px;
+    max-height: 646px;
 }
 
 
@@ -313,8 +311,6 @@ option {
     color: #1D1D1D;
 }
 
-
-
 .main-goods {
     grid-area: main-goods;
     display: flex;
@@ -322,16 +318,6 @@ option {
     width: 100%;
     height: auto;
 }
-
-
-/*какой будем делать маржин, по шаблону у всего сайта одинаковый маржин?
-
-Марина: выше я поставила у всего мэйн контейнера, хедеру и футеру отступы не нужны, там бэкграунд заливка своя и расположение текста другое
-
-.main-container {
-    padding: 10vh 75px;
-    padding-top: 25vh;
-}*/
 
 .main-goods__header {
     display: flex;
@@ -352,7 +338,6 @@ option {
     text-decoration: none;
     text-transform: uppercase;
     color: #565656;
-    /*сделать расстояние между стрелочкой и надписью*/
 }
 
 .main-goods__header-link {
@@ -368,19 +353,77 @@ option {
 }
 
 .main-goods__product_cards {
-    display: grid;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2em;
+
+    /*    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 30px;*/
 }
 
 .main-goods__article {
     display: flex;
     flex-direction: column;
-    height: 460px;
-    width: 100%;
-    border: 1px solid yellow;
+    height: 50%;
+    width: 20.5%;
+    border: 1px solid rgb(12, 12, 12, 0.5);
 }
 
+.main-goods__image {
+    position: relative;
+}
+
+.main-goods__photo {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: 450px;
+}
+
+.main-goods__like {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+    border: none;
+    background-color: #fffdfd00;
+}
+
+.main-goods__label {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4px;
+    padding: 4px 6px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #13ED1C;
+}
+
+.main-goods__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main-goods__to_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1D1D1D;
+}
+
+.main-goods__shopping_bag {
+    border: none;
+    background-color: #fffdfd00;
+    cursor: pointer;
+}
+
+
+/* made by background-image::after
 .main-goods__image_1 {
     position: relative;
     height: 100%;
@@ -468,99 +511,4 @@ option {
     background-position: left;
     border: 1px solid red;
 }
-
-
-
-.main-goods__like {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    cursor: pointer;
-    border: none;
-    background-color: #fffdfd00;
-}
-
-.main-goods__label {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    padding: 4px 6px;
-    font-weight: 600;
-    color: #FFFFFF;
-    background: #13ED1C;
-}
-
-.main-goods__info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.main-goods__to_buy {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: 600;
-    font-size: 20px;
-    color: #1D1D1D;
-}
-
-.main-goods__shopping_bag {
-    border: none;
-    background-color: #fffdfd00;
-    cursor: pointer;
-}
-
-
-
-
-.main-product_cards__price {
-    font-weight: bold;
-    color: #1D1D1D;
-}
-
-
-.main-product_cards__label_new {
-    font-weight: 600;
-    font-size: 14px;
-    color: #FFFFFF;
-    background: #13ED1C;
-    width: 15%;
-    text-align: center;
-    padding: 3px;
-    margin: 0;
-
-    position: absolute;
-    bottom: 0.75%;
-    left: 0%;
-    z-index: 2;
-}
-
-.main-product_cards__price_and_bag {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-product_cards__price {
-    font-weight: bold;
-    color: #1D1D1D;
-}
-
-.main-product_cards__shopbag {
-    border: none;
-    background-color: #fffdfd00;
-    cursor: pointer;
-}
-
-.main-product_cards__product_brand,
-.main-product_cards__product_name {
-    font-weight: 400;
-    font-size: 14px;
-    color: #1D1D1D;
-}
-
-.main-product_cards__size {
-    display: flex;
-    gap: 10px;
-    color: #565656;
-}
+*/
