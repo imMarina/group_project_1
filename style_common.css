@@ -22,12 +22,8 @@ body {
 }
 
 .header-container {
-    display: grid;
-    grid-template-rows: 1fr 10vh 1fr;
-    grid-template-areas:
-        "header-title"
-        "header-menu"
-        "header-menu_list";
+    display: flex;
+    flex-direction: column;
     height: 25vh;
     width: 100%;
 }
@@ -44,19 +40,19 @@ body {
 }
 
 .header-title {
-    grid-area: header-title;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 8vh;
     background: #FCFCFC;
 }
 
 .header-menu {
-    grid-area: header-menu;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 75px;
+    height: 10vh;
     color: #FFFFFF;
     background-color: black;
 }
@@ -155,12 +151,12 @@ option {
 }
 
 .header-menu_list {
-    grid-area: header-menu_list;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 2.5em;
+    height: 8vh;
     background: #FCFCFC;
 }
 
@@ -316,6 +312,8 @@ option {
     text-transform: uppercase;
     color: #1D1D1D;
 }
+
+
 
 .main-goods {
     grid-area: main-goods;
