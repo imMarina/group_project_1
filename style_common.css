@@ -373,6 +373,7 @@ option {
 }
 
 .main-goods__wrapper {
+    position: relative;
     max-height: 550px;
     width: auto;
 }
@@ -381,37 +382,23 @@ option {
     display: flex;
     flex-direction: column;
     height: 550px;
-    max-width: 100%;
-}
-
-/*.main-goods__article:hover .main-goods__subinfo {
-    display: flex;
-}
-
-.main-goods__article:hover {
-    z-index: 1;
-    margin-bottom: 30px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-    height: 550px;
-    background-color: white;
-}
-*/
-
-.main-goods__image {
-    position: relative;
-}
-
-.main-goods__photo {
-    min-height: auto;
     width: 100%;
-    max-width: 300px;
-    max-height: 450px;
+}
+
+.main-goods__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-goods__like {
-    position: absolute;
+    /*    position: absolute;
     top: 10px;
-    right: 0px;
+    right: 0px;*/
+
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-right: 10px;
     max-width: 100%;
     cursor: pointer;
     border: none;
@@ -419,14 +406,114 @@ option {
 }
 
 .main-goods__label {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 4px;
+    /*    position: absolute;
+    bottom: 0;*/
+
+    align-self: flex-start;
+    margin-bottom: 0;
     padding: 4px 6px;
     font-weight: 600;
     color: #FFFFFF;
     background: #13ED1C;
 }
+
+.main-goods__image_1 {
+    height: 100%;
+    width: 100%;
+    background-image: url("./image/zip-hoodie1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main-goods__image_2 {
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main-goods__image_3 {
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main-goods__image_4 {
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main-goods__image_5 {
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main-goods__image_6 {
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main-goods__image_7 {
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.main-goods__image_8 {
+    height: 100%;
+    width: auto;
+    background-image: url("./image/zip-hoodie8.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+
+.main-goods__article:hover .main-goods__subinfo {
+    z-index: 3;
+    display: flex;
+}
+
+.main-goods__article:hover {
+    z-index: 3;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    height: 650px;
+    background-color: white;
+}
+
+/*
+.main-goods__image {
+    position: relative;
+}
+.main-goods__photo {
+    min-height: auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: 450px;
+}*/
+
 
 .main-goods__info {
     display: flex;
@@ -475,95 +562,7 @@ option {
 }
 
 
-/* made by background-image::after
-.main-goods__image_1 {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-image: url("./image/zip-hoodie1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-
-.main-goods__image_2 {
-    position: relative;
-    height: 100%;
-    width: auto;
-    background-image: url("./image/zip-hoodie2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-
-.main-goods__image_3 {
-    position: relative;
-    height: 100%;
-    width: auto;
-    background-image: url("./image/zip-hoodie3.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-
-.main-goods__image_4 {
-    position: relative;
-    height: 100%;
-    width: auto;
-    background-image: url("./image/zip-hoodie4.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-
-.main-goods__image_5 {
-    position: relative;
-    height: 100%;
-    width: auto;
-    background-image: url("./image/zip-hoodie5.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-
-.main-goods__image_6 {
-    position: relative;
-    height: 100%;
-    width: auto;
-    background-image: url("./image/zip-hoodie6.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-
-.main-goods__image_7 {
-    position: relative;
-    height: 100%;
-    width: auto;
-    background-image: url("./image/zip-hoodie7.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-
-.main-goods__image_8 {
-    position: relative;
-    height: 100%;
-    width: auto;
-    background-image: url("./image/zip-hoodie8.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    border: 1px solid red;
-}
-*/
+/*made by background-image::after*/
 
 .footer-container {
     margin-top: auto;
@@ -596,9 +595,7 @@ option {
     color: #1A1A1A;
 }
 
-.footer-navigation__link-sale {
-    color: #ED1331;
-}
+
 
 
 .footer-navigation__support ul,
@@ -618,6 +615,10 @@ option {
     text-decoration: none;
     text-transform: uppercase;
     color: #1D1D1D;
+}
+
+.footer-navigation__link-sale {
+    color: #ED1331;
 }
 
 .footer-payment {
