@@ -104,10 +104,14 @@ option {
 }
 
 .header-menu__center {
-    grid-column: 2/3;
     display: flex;
-    flex-direction: row;
     align-items: center;
+}
+
+.header-menu__center ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     column-gap: 3.5em;
 }
 
@@ -120,7 +124,7 @@ option {
 }
 
 .header-menu__link:hover {
-    padding: 4vh 2vw;
+    padding: 3.6vh 2vw;
     text-decoration: none;
     color: #FFFFFF;
     background-color: #2B2B2B;
@@ -583,13 +587,28 @@ option {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 15px;
 }
 
 .footer-navigation__title {
+    margin-bottom: 20px;
     font-weight: 600;
     text-transform: uppercase;
     color: #1A1A1A;
+}
+
+.footer-navigation__link-sale {
+    color: #ED1331;
+}
+
+
+.footer-navigation__support ul,
+.footer-navigation__search ul,
+.footer-navigation__about_the_company ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
 }
 
 .footer-navigation__support a,
