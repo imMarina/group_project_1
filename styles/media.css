@@ -1,13 +1,30 @@
-@media (max-width: 704px) {
+@media (max-width: 375px) {
+
+    body,
+    header {
+        max-width: 375px;
+    }
 
     .header-title {
         height: 50px;
+        font-size: 0.7em;
     }
 
     .header-menu {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
         height: 70px;
+    }
+
+    .header-menu__left h1 {
+        font-size: 1.6em;
+    }
+
+    .burger {
+        display: flex;
     }
 
     .header-menu__left img,
