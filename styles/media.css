@@ -42,7 +42,7 @@
 
     .main-container {
         padding: 0;
-        padding-top: 15vh;
+        padding-top: 12vh;
     }
 
     .main-banner {}
@@ -214,7 +214,7 @@
     }
 
     .footer-copyright {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 
     .footer-payment {
