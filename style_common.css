@@ -633,8 +633,6 @@ option {
 /* bug - при изменении размера страницы менее чем на 700px footer меняет границы bcg color, то есть не адаптируется по ширине на 100% (при responsive design)*/
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
     margin-top: auto;
     height: auto;
     width: 100%;

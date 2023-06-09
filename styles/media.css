@@ -104,6 +104,10 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    .footer-copyright {
+        font-size: 0.8em;
+    }
 }
 
 
