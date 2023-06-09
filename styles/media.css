@@ -1,3 +1,12 @@
+@media (min-width: 376px) .main-catalog {
+    display: flex;
+    height: 40vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 @media (max-width: 375px) {
 
     .header-title {
@@ -29,29 +38,6 @@
     .header-menu__center {
         display: none;
     }
-
-    /*.header-menu__center-adaptive {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-        overflow-y: auto;
-        padding: 50px 40px;
-        animation: burgeranimation 0.4s;
-    }
-
-    .header-menu__center-adaptive ul {
-        flex-direction: column;
-        row-gap: 30px;
-    }
-*/
-
 
 
     .header-menu__right-logo_heart {
@@ -91,4 +77,25 @@
         display: none;
     }
 
+}
+
+
+
+<div class="header__search-input"><input type="text" placeholder="Поиск"></div>.header__dropdown {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    min-height: 48px;
+    width: 48px;
+    min-width: 48px;
+    margin-right: 15px;
+    /* border: 1px solid black; */
+}
+
+.header__dropdown img {
+    height: 24px;
+    min-height: 24px;
+    width: 30px;
+    min-width: 30px;
 }
