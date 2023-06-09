@@ -380,6 +380,9 @@ option {
     color: #1D1D1D;
 }
 
+.main-catalog__block a:hover {
+    font-size: larger;
+}
 
 
 .main-goods {
@@ -410,6 +413,7 @@ option {
     text-transform: uppercase;
     color: #565656;
 }
+
 
 .main-goods__header-link {
     margin-left: auto;
@@ -626,21 +630,20 @@ option {
     margin-top: 5px;
 }
 
-
-/*made by background-image::after*/
+/* bug - при изменении размера страницы менее чем на 700px footer меняет границы bcg color, то есть не адаптируется по ширине на 100% (при responsive design)*/
 
 .footer-container {
+    display: flex;
+    flex-direction: column;
     margin-top: auto;
     height: auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     background-color: #F6F6F6;
 }
 
 .footer-navigation {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footer-navigation__support,
@@ -659,9 +662,6 @@ option {
     text-transform: uppercase;
     color: #1A1A1A;
 }
-
-
-
 
 .footer-navigation__support ul,
 .footer-navigation__search ul,
@@ -682,7 +682,7 @@ option {
     color: #1D1D1D;
 }
 
-.footer-navigation__link-sale {
+a.footer-navigation__link-sale {
     color: #ED1331;
 }
 
@@ -690,8 +690,19 @@ option {
     padding-bottom: 30px;
 }
 
+.footer-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin: 20px 0 20px 0;
+}
+
 .footer-copyright {
-    border-top: 1px solid #DBDBDB;
+    padding: 15px 0;
     text-align: center;
-    padding: 15px 0 15px 0;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border-top: 1px solid #DBDBDB;
 }
