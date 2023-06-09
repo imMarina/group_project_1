@@ -635,12 +635,16 @@ option {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #F6F6F6;
 }
 
 .footer-navigation {
     display: flex;
     justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    column-gap: 5%;
 }
 
 .footer-navigation__support,
@@ -658,10 +662,8 @@ option {
     font-weight: 600;
     text-transform: uppercase;
     color: #1A1A1A;
+    cursor: pointer;
 }
-
-
-
 
 .footer-navigation__support ul,
 .footer-navigation__search ul,
@@ -671,6 +673,7 @@ option {
     flex-direction: column;
     align-items: center;
     row-gap: 15px;
+    padding-inline-start: 0px;
 }
 
 .footer-navigation__support a,
@@ -683,10 +686,13 @@ option {
 }
 
 .footer-navigation__link-sale {
-    color: #ED1331;
+    color: #ED1331 !important;
 }
 
 .footer-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 30px;
 }
 
