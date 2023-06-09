@@ -1,4 +1,6 @@
-@media (max-width: 375px) {
+/* Стили для смартфонов и планшетов с экранами до 705px */
+
+@media (max-width: 705px) {
 
     .header-title {
         height: 50px;
@@ -30,30 +32,6 @@
         display: none;
     }
 
-    /*.header-menu__center-adaptive {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-        overflow-y: auto;
-        padding: 50px 40px;
-        animation: burgeranimation 0.4s;
-    }
-
-    .header-menu__center-adaptive ul {
-        flex-direction: column;
-        row-gap: 30px;
-    }
-*/
-
-
-
     .header-menu__right-logo_heart {
         display: none;
     }
@@ -78,7 +56,7 @@
     }
 
     .main-banner__img_2 {
-        width: 375px;
+        width: 705px;
         background-color: #FFF500;
     }
 
@@ -91,15 +69,145 @@
         display: none;
     }
 
+    .main-banner__center {}
+
+
+    .main-banner__center {
+        position: absolute;
+        top: auto;
+
+        height: auto;
+        width: 100%;
+        max-width: 60%;
+        min-height: 40%;
+
+        border-radius: 20px;
+        color: #1D1D1D;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .main-banner__center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-banner__title {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: 500;
+    }
+
+    .main-banner__text {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .main-banner__arrow {
+        display: none;
+    }
+
+    .main-banner__button a {
+        font-size: 0.5em;
+    }
+
+    .main-catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        margin: 30px 30px;
+    }
+
+    .main-catalog__block {
+        row-gap: 1em;
+    }
+
+    .main-catalog__round {
+        width: 130px;
+    }
+
+    .main-goods__header h2 {
+        margin-left: 20px;
+        font-size: 2em;
+    }
+
+    .main-goods__header a {
+        font-size: 1em;
+    }
+
+    .main-goods__arrow {
+        margin-right: 20px;
+    }
+
+    .main-goods__product_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 20px;
+        margin: 10px 40px;
+    }
+
+    .main-goods__images {
+        width: 150px;
+    }
+
+    .main-goods__wrapper {
+        max-height: 320px;
+    }
+
+    .main-goods__label {
+        font-size: smaller;
+    }
+
+    .main-goods__article {
+        height: 320px;
+    }
+
+    .main-goods__article:hover {
+        height: 370px;
+    }
+
+    .main-goods__info p {
+        font-size: smaller;
+    }
+
+    .main-goods__shopping_bag {
+        width: 24px;
+        height: 24px;
+    }
+
+    .main-goods__info span {
+        font-size: smaller;
+    }
+
+    .main-goods__subinfo-title {
+        font-size: smaller;
+    }
+
+    .main-goods__subinfo-values {
+        font-size: smaller;
+        margin-top: 2px;
+    }
+
+    .footer-container {
+        margin-top: 30px;
+        width: 100%;
+    }
+
     .footer-navigation__full_list {
         display: none;
     }
+
     .footer-navigation__list_details {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
     }
-    .footer-navigation__support, 
-    .footer-navigation__search, 
+
+    .footer-navigation__support,
+    .footer-navigation__search,
     .footer-navigation__about_the_company {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -108,17 +216,28 @@
     .footer-copyright {
         font-size: 0.8em;
     }
+
+    .footer-payment {
+        margin: 5px 0;
+        padding-bottom: 10px;
+    }
 }
 
+/* Стили для устройств с экранами в диапазоне 706px - 1023px (планшеты и подобные) */
 
-@media (min-width: 378px) { 
-    .footer-navigation__full_list {
-        display: flex;
-    }
+@media (min-width: 706px) and (max-width: 1023px) {
 
     .footer-navigation__list_details {
         display: none;
     }
 
+}
 
+/* Стили для ноутбуков и компьютеров с экранами более 1024px */
+
+@media screen (min-width: 1024px) {
+
+    .footer-navigation__list_details {
+        display: none;
+    }
 }
