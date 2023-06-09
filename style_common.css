@@ -166,6 +166,10 @@ option {
     align-items: center;
 }
 
+.header-menu__center-adaptive {
+    display: none;
+}
+
 .header-menu__center ul {
     list-style: none;
     display: flex;
@@ -229,8 +233,6 @@ option {
 .header-menu__link_2 {
     color: #565656;
 }
-
-
 
 
 .main-container {
