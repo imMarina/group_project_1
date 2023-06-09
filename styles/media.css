@@ -91,4 +91,30 @@
         display: none;
     }
 
+    .footer-navigation__full_list {
+        display: none;
+    }
+    .footer-navigation__list_details {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-navigation__support, 
+    .footer-navigation__search, 
+    .footer-navigation__about_the_company {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 378px) { 
+    .footer-navigation__full_list {
+        display: flex;
+    }
+
+    .footer-navigation__list_details {
+        display: none;
+    }
+
+
 }

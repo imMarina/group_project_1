@@ -638,11 +638,16 @@ option {
     margin-top: auto;
     height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #F6F6F6;
 }
 
 .footer-navigation {
     display: flex;
+    text-align: center;
+    padding-top: 30px;
     justify-content: space-around;
 }
 
@@ -661,6 +666,7 @@ option {
     font-weight: 600;
     text-transform: uppercase;
     color: #1A1A1A;
+    cursor: pointer;
 }
 
 .footer-navigation__support ul,
@@ -671,6 +677,7 @@ option {
     flex-direction: column;
     align-items: center;
     row-gap: 15px;
+    padding-inline-start: 0px;
 }
 
 .footer-navigation__support a,
@@ -687,6 +694,9 @@ a.footer-navigation__link-sale {
 }
 
 .footer-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 30px;
 }
 
