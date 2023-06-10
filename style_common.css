@@ -356,6 +356,7 @@ option {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 70px 0;
 }
 
 .main-catalog__block {

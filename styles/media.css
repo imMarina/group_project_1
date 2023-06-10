@@ -303,7 +303,7 @@
     .main-catalog {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 5px;
+        gap: 30px;
         margin-top: 30px;
         margin-bottom: 15px;
     }
