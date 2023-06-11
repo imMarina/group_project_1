@@ -226,6 +226,9 @@
 /* Стили для устройств с экранами в диапазоне 706px - 1023px (планшеты и подобные) */
 
 @media (min-width: 706px) and (max-width: 1023px) {
+    .footer-navigation__full_list {
+        display: flex;
+    }
 
     .footer-navigation__list_details {
         display: none;
@@ -236,6 +239,9 @@
 /* Стили для ноутбуков и компьютеров с экранами более 1024px */
 
 @media screen (min-width: 1024px) {
+    .footer-navigation__full_list {
+        display: flex;
+    }
 
     .footer-navigation__list_details {
         display: none;
