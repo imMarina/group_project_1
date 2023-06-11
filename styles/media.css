@@ -1,3 +1,11 @@
+/* Стили для смартфонов с экраном до 704 px */
+
+@media (max-width: 704px) {
+    .main-goods__wrapper_with_concealment {
+        display: none;
+    }
+}
+
 /* Стили для смартфонов и планшетов с экранами до 705px */
 
 @media (max-width: 705px) {
@@ -83,6 +91,10 @@
 
     .main-banner__arrow {
         display: none;
+    }
+
+    .main-banner__button {
+        width: 100px;
     }
 
     .main-banner__button a {
@@ -347,6 +359,10 @@
         width: 170px;
     }
 
+    .main-goods__wrapper_with_concealment {
+        display: flex;
+    }
+
     .main-goods__label {
         font-size: smaller;
     }
@@ -421,7 +437,7 @@
 
 /* Стили для ноутбуков и компьютеров с экранами более 1024px */
 
-@media screen (min-width: 1024px) {
+@media (min-width: 1024px) {
     .footer-navigation__full_list {
         display: flex;
     }

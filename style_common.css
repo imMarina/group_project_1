@@ -317,6 +317,7 @@ option {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .main-banner__title {
@@ -651,6 +652,7 @@ option {
     font-weight: 600;
     text-transform: uppercase;
     color: #1A1A1A;
+    text-align: center;
 }
 
 .footer-navigation__support ul,
@@ -661,6 +663,7 @@ option {
     flex-direction: column;
     align-items: center;
     row-gap: 15px;
+    padding-inline-start: 0px;
 }
 
 .footer-navigation__support a,
@@ -691,4 +694,10 @@ a.footer-navigation__link-sale {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     border-top: 1px solid #DBDBDB;
+}
+
+.footer-copyright__terms_of_use {
+    text-decoration: none;
+    cursor: pointer;
+    color: #565656;
 }
