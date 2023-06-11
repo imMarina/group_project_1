@@ -1,3 +1,27 @@
+@media (max-width: 480px) {
+    .main-banner__center {
+        min-height: 30%;
+        width: 50%;
+    }
+
+    .main-banner__title {
+        display: none;
+    }
+
+    .main-banner__text {
+        font-size: 0.5em;
+    }
+
+    .main-banner__button {
+        height: 6vh;
+        width: 18vw;
+    }
+
+    .main-banner__button a {
+        font-size: 0.3em;
+    }
+}
+
 /* Стили для смартфонов и планшетов с экранами до 705px */
 
 @media (max-width: 705px) {
@@ -56,7 +80,7 @@
     }
 
     .main-banner__img_2 {
-        width: 705px;
+        width: 100%;
         background-color: #FFF500;
     }
 
@@ -69,14 +93,18 @@
         display: none;
     }
 
+    .main-banner__center {
+        width: 100%;
+    }
+
     .main-banner__title {
         margin: 0;
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 500;
     }
 
     .main-banner__text {
-        font-size: 1em;
+        font-size: 0.7em;
         font-weight: 500;
     }
 
@@ -269,6 +297,11 @@
         height: 400px;
     }
 
+    .main-banner__img_1,
+    .main-banner__img_3 {
+        width: 100%;
+    }
+
     .main-banner__img_2 {
         display: none;
     }
@@ -279,6 +312,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: auto;
+        width: 100%;
     }
 
     .main-banner__title {
